@@ -1,6 +1,8 @@
 # A3RT-TalkPy
 A3RT-TalkPyは、[A3RT TalkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/)をPythonから利用するための、非公式ラッパーライブラリです。
 
+[![Upload pypi package release](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/python-publish.yml/badge.svg?branch=master)](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/python-publish.yml)
+
 # なぜ作ったのか？
 俺が使う理由もなく無駄なライブラリをわざわざ作るわけがないだろう...
 
