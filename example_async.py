@@ -8,7 +8,7 @@ API_KEY = os.environ.get("TALK_API_KEY")
 client = AsyncTalkClient(API_KEY)
 
 async def main():
-    query = "Is this correctly working?"
+    query = "聞こえますか？"
     response = await client.talk(query)
     print(response.reply)
 
