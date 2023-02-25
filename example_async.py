@@ -1,5 +1,6 @@
 import asyncio
 import os
+
 from a3rt_talkpy import AsyncTalkClient
 
 API_KEY = os.environ.get("TALK_API_KEY")

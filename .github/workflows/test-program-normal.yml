@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  deploy:
+  testing:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -18,5 +18,5 @@ jobs:
       env:
         TALK_API_KEY: ${{ secrets.TALK_API_KEY }}
       run:
-        python example/normal.py
+        python example_normal.py
 

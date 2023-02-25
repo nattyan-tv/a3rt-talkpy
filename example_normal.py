@@ -1,5 +1,6 @@
-from a3rt_talkpy import TalkClient
 import os
+
+from a3rt_talkpy import TalkClient
 
 API_KEY = os.environ.get("TALK_API_KEY")
 
