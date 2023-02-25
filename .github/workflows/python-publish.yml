@@ -1,9 +1,6 @@
-name: Upload pypi package release
+name: Package Release
 
 on:
-  push:
-    branches:
-      - master
   release:
     types:
       - created
@@ -11,9 +8,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./a3rt_talkpy
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python
