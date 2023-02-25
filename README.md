@@ -1,5 +1,5 @@
 # A3RT-TalkPy
-A3RT-TalkPyは、[A3RT TalkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/)をPythonから利用するための、非公式ラッパーライブラリです。
+A3RT-TalkPyは、[A3RT TalkAPI](https://a3rt.recruit.co.jp/product/talkAPI/)をPythonから利用するための、非公式ラッパーライブラリです。
 
 [![Test Program Normal](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-normal.yml/badge.svg?branch=master)](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-normal.yml) [![Test Program Async](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-async.yml/badge.svg?branch=master)](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-async.yml)
 
@@ -9,8 +9,8 @@ A3RT-TalkPyは、[A3RT TalkAPI](https://a3rt.recruit-tech.co.jp/product/talkAPI/
 俺が使う理由もなく無駄なライブラリをわざわざ作るわけがないだろう...
 
 # A3RT TalkAPIとは？
-[株式会社リクルート](https://www.recruit.co.jp/)が立ち上げた新規事業の１つである[A3RT](https://a3rt.recruit-tech.co.jp/)という機械学習API群のAPIの１つで、TalkAPIでは会話を行うことができます。  
-詳しくは、[A3RT TalkAPIのページ](https://a3rt.recruit-tech.co.jp/product/talkAPI/)をご覧ください。
+[株式会社リクルート](https://www.recruit.co.jp/)が立ち上げた新規事業の１つである[A3RT](https://a3rt.recruit.co.jp/)という機械学習API群のAPIの１つで、TalkAPIでは会話を行うことができます。  
+詳しくは、[A3RT TalkAPIのページ](https://a3rt.recruit..co.jp/product/talkAPI/)をご覧ください。
 
 # A3RT-TalkPyとは？
 上記で述べた、A3RT TalkAPIをPythonから利用するための、非公式ラッパーライブラリです。  
