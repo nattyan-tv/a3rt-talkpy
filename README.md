@@ -10,7 +10,7 @@ A3RT-TalkPyは、[A3RT TalkAPI](https://a3rt.recruit.co.jp/product/talkAPI/)をP
 
 # A3RT TalkAPIとは？
 [株式会社リクルート](https://www.recruit.co.jp/)が立ち上げた新規事業の１つである[A3RT](https://a3rt.recruit.co.jp/)という機械学習API群のAPIの１つで、TalkAPIでは会話を行うことができます。  
-詳しくは、[A3RT TalkAPIのページ](https://a3rt.recruit..co.jp/product/talkAPI/)をご覧ください。
+詳しくは、[A3RT TalkAPIのページ](https://a3rt.recruit.co.jp/product/talkAPI/)をご覧ください。
 
 # A3RT-TalkPyとは？
 上記で述べた、A3RT TalkAPIをPythonから利用するための、非公式ラッパーライブラリです。  
