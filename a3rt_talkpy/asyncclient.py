@@ -4,12 +4,13 @@ from .response import Response
 from .exception import *
 
 class AsyncTalkClient:
-    def __init__(self, apikey: str) -> None:
+    def __init__(self, apikey: str, session: aiohttp.ClientSession = None) -> None:
         self.apikey: str = apikey
         self.base_url: str = 'https://api.a3rt.recruit.co.jp/talk/v1/smalltalk'
+        self.session = aiohttp.ClientSession() if session is None else session
 
     async def talk(self, query: str) -> Response:
-        async with aiohttp.ClientSession() as session:
+        async with self.session as session:
             async with session.post(self.base_url, data={'apikey': self.apikey, 'query': query}) as res:
                 response = await res.json()
                 match response['status']:
