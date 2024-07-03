@@ -7,6 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name=a3rt_talkpy.__name__,
     version=a3rt_talkpy.__version__,
+    install_requires=a3rt_talkpy.__install_requires__,
     author=a3rt_talkpy.__author__,
     description=a3rt_talkpy.__description__,
     long_description=long_description,
