@@ -13,4 +13,8 @@ __classifiers__ = [
     "Programming Language :: Python :: 3.10",
     "License :: OSI Approved :: MIT License"
 ]
-
+__install_requires__ = [
+    "requests",
+    "asyncio",
+    "aiohttp"
+]
