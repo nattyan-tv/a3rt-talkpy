@@ -4,13 +4,42 @@ from .response import Response
 from .exception import *
 
 class AsyncTalkClient:
-    def __init__(self, apikey: str, session: aiohttp.ClientSession = None) -> None:
+    """
+    A3RT Talk APIを非同期で利用するためのクライアントクラスです。
+    """
+
+    def __init__(self, apikey: str, session: aiohttp.ClientSession | None = None) -> None:
+        """
+        A3RT Talk APIを非同期で利用するためのクライアントクラスです。
+
+        Args:
+            apikey (str): A3RT Talk APIのAPIキー
+            session (aiohttp.ClientSession, optional): セッションを指定します。指定しない場合は新しいセッションが作成されます。
+        """
         self.apikey: str = apikey
         self.base_url: str = 'https://api.a3rt.recruit.co.jp/talk/v1/smalltalk'
-        self.session = aiohttp.ClientSession() if session is None else session
+        self._session = session
+
+    async def session(self) -> aiohttp.ClientSession:
+        """
+        セッションを取得します。
+        通常はこれを直接呼び出す必要はありません。
+        """
+        if self._session is None or self._session.closed:
+            self._session = aiohttp.ClientSession()
+        return self._session
 
     async def talk(self, query: str) -> Response:
-        async with self.session.post(self.base_url, data={'apikey': self.apikey, 'query': query}) as res:
+        """
+        A3RT Talk APIを非同期で利用します。
+
+        Args:
+            query (str): 送信するクエリ
+
+        Returns:
+            Response: A3RT Talk APIのレスポンス
+        """
+        async with (await self.session()).post(self.base_url, data={'apikey': self.apikey, 'query': query}) as res:
             response = await res.json()
             match response['status']:
                 case 0:
