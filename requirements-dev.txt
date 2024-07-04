@@ -1,0 +1,7 @@
+requests
+aiohttp
+asyncio
+
+twine
+wheel
+setuptools

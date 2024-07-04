@@ -1,9 +1,7 @@
 # A3RT-TalkPy
 A3RT-TalkPyは、[A3RT TalkAPI](https://a3rt.recruit.co.jp/product/talkAPI/)をPythonから利用するための、非公式ラッパーライブラリです。
 
-[![Test Program Normal](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-normal.yml/badge.svg?branch=master)](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-normal.yml) [![Test Program Async](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-async.yml/badge.svg?branch=master)](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-async.yml)
-
-[![Upload pypi package release](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/python-publish.yml/badge.svg?branch=master)](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/python-publish.yml)
+[![Test Program (Sync)](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-normal.yml/badge.svg?branch=master)](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-normal.yml) [![Test Program (Async)](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-async.yml/badge.svg?branch=master)](https://github.com/nattyan-tv/a3rt-talkpy/actions/workflows/test-program-async.yml)
 
 # なぜ作ったのか？
 俺が使う理由もなく無駄なライブラリをわざわざ作るわけがないだろう...
@@ -65,4 +63,3 @@ if __name__ == "__main__":
 
 # ライセンス
 [LICENSE](LICENSE)をご確認ください。
-
