@@ -3,7 +3,7 @@ from .asyncclient import AsyncTalkClient
 from .response import Response
 from .exception import *
 
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 __name__ = "a3rt_talkpy"
 __author__ = "NattyanTV"

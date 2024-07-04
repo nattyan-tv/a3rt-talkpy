@@ -3,6 +3,12 @@ class Response:
         self.resp: dict = response
 
     def is_empty(self) -> bool:
+        """
+        Check if the response is empty.
+
+        Returns:
+            bool: True if the response is empty, False otherwise.
+        """
         return self.status == 2000
 
     @property
@@ -24,5 +30,3 @@ class Response:
     @property
     def reply(self) -> str:
         return self.results[0]['reply']
-
-
